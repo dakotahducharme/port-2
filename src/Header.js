@@ -21,12 +21,15 @@ export default class Header extends React.Component {
     return (
       <div>
         <Navbar color="faded" light>
-          <NavbarBrand href="/" className="mr-auto">dakotah ducharme</NavbarBrand>
+          <NavbarBrand href="/" className="mr-auto"><h1>dakotah ducharme</h1></NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
               <NavItem>
                 <NavLink href="/">Past work</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/">About Me</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/dakotahducharme">GitHub</NavLink>
